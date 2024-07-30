@@ -5,7 +5,7 @@
 //! while many rust web frameworks such as axum and rocket have alot of
 //! features, quite easy to use and performant, tiny aims to achieve extremy
 //! simplicity while providing as much performance as possible. which should
-//! be somewhere around 140 000 requests/s _(although only for small sites)_.
+//! be somewhere around 120 000 requests/s _(although only for small sites)_.
 
-#[cfg(feature = "derive")]
-pub use tiny_derive as derive;
+#[cfg(feature = "attributes")]
+pub use tiny_attributes as attr;

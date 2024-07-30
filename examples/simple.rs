@@ -1,6 +1,7 @@
-//!
+//! a simple example of using tiny
 
-use tiny_derive::main;
+#[macro_use]
+extern crate tiny_attributes;
 
 #[main]
 pub fn tiny() -> () {}

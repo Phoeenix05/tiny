@@ -347,12 +347,12 @@ version = "0.1.0"
 dependencies = [
  "hashbrown",
  "mini-moka",
- "tiny-derive",
+ "tiny-attributes",
  "tiny_http",
 ]
 
 [[package]]
-name = "tiny-derive"
+name = "tiny-attributes"
 version = "0.1.0"
 dependencies = [
  "proc-macro2",

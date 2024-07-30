@@ -1,10 +1,10 @@
 [workspace]
-members = ["crates/tiny-derive"]
+members = ["crates/tiny-attributes"]
 
 [workspace.package]
 authors = ["Anton Fredriksson <anton.e.fredriksson@icloud.com>"]
 license = "MIT"
-rust-version = "1.80.0"
+rust-version = "1.82.0"
 
 # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 [package]
@@ -23,9 +23,9 @@ tiny_http = "0.12.0"
 mini-moka = { version = "0.10.3", default-features = false, optional = true }
 
 # macro dependencies
-tiny-derive = { path = "crates/tiny-derive", optional = true }
+tiny-attributes = { path = "crates/tiny-attributes", optional = true }
 
 [features]
-default = ["cache", "derive"]
+default = ["cache", "attributes"]
 cache = ["dep:mini-moka"]
-derive = ["dep:tiny-derive"]
+attributes = ["dep:tiny-attributes"]
