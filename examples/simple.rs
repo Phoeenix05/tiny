@@ -1,7 +1,11 @@
 //! a simple example of using tiny
 
-#[macro_use]
-extern crate tiny_attributes;
+use tiny::prelude::*;
 
 #[main]
-pub fn tiny() -> () {}
+pub fn tiny() -> () {
+    let _cache = Cache::builder()
+        .with_capacity(128)
+        .with_ttl(TTL::Custom(7200))
+        .build();
+}

@@ -7,5 +7,9 @@
 //! simplicity while providing as much performance as possible. which should
 //! be somewhere around 120 000 requests/s _(although only for small sites)_.
 
+#[cfg(feature = "cache")]
+pub mod cache;
+pub mod prelude;
+
 #[cfg(feature = "attributes")]
 pub use tiny_attributes as attr;
